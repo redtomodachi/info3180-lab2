@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block main %}
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
+</head>
+
+<body>
+    <div class="upper">
+        <img src="{{ url_for('static', filename='ezgif.com-video-to-gif.gif') }}" alt="I still have no enemies"/>
+        <h1>Kemar Wilson</h1>
+        <p>@ <s>S</s>pain</p>
+        <p>St.Catherine, Jamaica</p>
+        <p>Joined {{date}}</p>
+    </div>
+
+    <div class="low">
+        <div class = "lower">
+            <p>
+                I am a third year student of computer science and i minor in japanese. Follow for more ⒹⒶⓃⓀ memes 
+            </p>
+            <table class ="table">
+                <div class ="flex">
+                    <div class="row">
+                        <h4>10</h4>
+                        <p>Posts</p>
+                    </div>
+                    <div class="row">
+                        <h4>10</h4>
+                        <p>Following</p>
+                    </div>
+                    <div class="row">
+                        <h4>25000</h4>
+                        <p>Followers</p>
+                    </div>
+                </div>
+    
+            </table>
+            <div class="button">
+                <button>Follow</button>
+            </div>
+    
+    </div>
+</body>
+
+{% endblock %}
